@@ -5,7 +5,7 @@
 <div class="nav-url">
 <ul>
     {{#foreach @blog.navigation}}
-    <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+    <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{@blog.url absolute="true"}}">{{label}}</a></li>
     {{/foreach}}
 </ul>
 <!--
