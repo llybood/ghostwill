@@ -3,14 +3,21 @@
 <nav class="top-bar">
 <div class="top-wrap">
 <div class="nav-url">
+<ul class="nav">
+    {{#foreach navigation}}
+    <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+    {{/foreach}}
+</ul>
+<!--
 <ul>
 <li><a style="font-size:16px;font-weight:bold" href="{{@blog.url}}">技术</a></li>
 <li><a style="font-size:16px;font-weight:bold" href="">生活</a></li>
 <li><a style="font-size:16px;font-weight:bold" href="">阅读</a></li>
+-->
 <!--
 <li><a style="font-size:16px;font-weight:bold" href="">关于我</a></li>
--->
 </ul>
+-->
 </div>
 <div class="search-bar">
 <input type="text" class="search-form-input" placeholder="Search">
